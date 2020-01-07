@@ -1,24 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>sbscribbles.com/home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+	<link href="css/scribblesmain.css" rel="stylesheet">
 </head>
 <body>
-  <div>
-    <header>
-      <h1>SavvyCoders Rox</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
-  </div>
+	<!-- Whole Page. Responsive Class here-->
+	<header>
+		<!--
+            <span class="header"><img src=""></span> Responsive Image and class
+            <div> First Half of Nav Bar?
+                <h2>SCRIBBLES</h2>
+            </div>
+            <div> second half of the NavBar -->
+		<nav>
+			<ul class="topnav" id="dropdownClick">
+				<li>SCRIBBLES</li>
+				<li class="hamburgerIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+				<li class="topnav-right">CONTACT</li>
+				<li class="topnav-right">ABOUT</li>
+				<li class="topnav-right">S.O.T.D.</li>
+				<li class="topnav-right">ARCHIVE</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="whitespace">
+	<br>
+	<br>
+
+		<!-- Whitespace responsive ID here -->
+		<section>
+			<h1 class="intro"><!--Centered Text-->Welcome to my blog.</h1><!--Line across bottom for title. Inquire about making it small-->
+			<p class="introP"><!--Centered Text-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis faucibus risus.</p><!--Line across bottom for title. Inquire about making it small-->
+		</section><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<section class="latestEntry">
+			<div class="row">
+				<div class="col-6 leftSide-col">
+					<div>
+						<h2 class="large">Latest Entry</h2>
+						<a href="default.asp"><img alt="HTML tutorial" src="smiley.gif" style="width:42px;height:42px;border:0;"></a>
+					</div>
+				</div>
+				<div class="col-6 rightSide-col">
+					<h3><a href="default.asp">Aenean consequat enim ante.</a></h3>
+					<a href="default.asp">Lorem ipsum dolor sit amet Lorem ipsum dolor fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</a>
+				</div>
+			</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<section>
+			<div>
+				<h2 class="large">Scribble of the Day</h2>
+				<br>
+				<h1 class="sotdP">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis faucibus risus, sit amet dignissim ante. Ut eu accumsan dolor..."</h1>
+				<h3 class="sotdP">-Sidney Buckner</h3>
+			</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<section>
+			<div>
+				<h2 class="large">Other Works</h2>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<h3 class="idk">title</h3>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+					<img src="">
+				</div>
+				<div class="col-4">
+					<h3 class="idk">title</h3>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+					<img src="">
+				</div>
+				<div class="col-4">
+					<h3 class="idk">title</h3>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+					<img src="">
+				</div>
+			</div>
+		</section>
+	</div><br>
+	<br>
+	<br>
+	<!--footer-->
+	<footer id="footer">
+		<div class="container">
+			<ul class="copyright">
+				<li>&copy; Sidney Buckner - sbscribbles</li>
+				<li>Just a responsive site, courtesy of: Sidney Buckner</li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript">
+	       function dropdownMenu() {
+	           var x = document.getElementById ("dropdownClick");
+	           if (x.className === "topnav") {
+	               x.className += " responsive";
+	               /*Change topnav to topnav.responsive*/
+	           } else {
+	               x.className = "topnav";
+	           }
+	       }
+	</script>
 </body>
 </html>

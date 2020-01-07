@@ -23,8 +23,8 @@
   "files.trimTrailingWhitespace": true,
   "stylelint.enable": true,
   "terminal.integrated.fontFamily": "'Inconsolata', monospace",
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vs-minimal",
   "workbench.view.alwaysShowHeaderActions": true
 }
